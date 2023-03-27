@@ -1,0 +1,33 @@
+<div style="padding-left: 100px;">
+  <h1> Add Books</h1>
+  <form [formGroup]="booksForm">
+    <label>Title</label>
+    <input type="text" formControlName="titles">
+
+    <label>Author</label>
+    <input type="text" formControlName="author">
+
+    <label>ISBN</label>
+    <input type="text" formControlName="isbn">
+
+    <label>No Of Copies</label>
+    <input type="number" formControlName="copies">
+
+    <div *ngIf="booksForm.valid">
+      <input type="submit" value="Save Book" style="background: #56ab2f;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #a8e063, #56ab2f);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #a8e063, #56ab2f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      ">
+    </div>
+
+  </form>
+</div>
+
+<h3> Form status: {{booksForm.valid}}</h3>
+<h3> Form json: {{booksForm.value | json}}</h3>
+
+<form [formGroup]="booksForm">
+  <label>Title</label>
+  <input type="text" formControlName="titles">
+
+</form>

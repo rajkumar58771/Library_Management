@@ -1,0 +1,11 @@
+<h3>Length : {{number.length}}</h3>
+{{number}}
+<div style = "margin: 20; float:right">
+    <button class = "button" (click)="addAdmin()"> Add Admin</button>
+</div>
+
+<ul>
+    <li *ngFor="let anything of number">{{anything}}</li>
+</ul>
+
+<h2 *ngIf="number.length<1">No data</h2>

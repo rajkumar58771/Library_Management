@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <title>Business ka B</title>
+    <style>
+        .heading{
+            position: sticky;
+        }
+        h1{
+            color: rgb(0, 0, 190);
+            
+        }
+        p{
+            font-size: xx-large;
+        }
+        h1{
+            font-size: 80px;
+            text-align: center;
+            text-shadow: 3px 4px 4px black;
+        }
+        img{
+            width: 500px;
+            border: 4px solid black;
+        }
+        nav a{
+            text-decoration: none;
+            padding: 25px;
+            color: darkturquoise;
+            font-size: x-large;   
+        }
+        nav{
+            padding: 25px;
+            background-color: rgb(105, 17, 17);
+        }
+        nav a:hover{
+            color: darkviolet;
+        }
+        nav{
+            position:sticky;
+            top: 0%;
+        }
+               
+        footer{
+            background-color: rgb(43, 26, 1);
+            padding-bottom: 50px;
+        }
+        footer a{
+            color: cornsilk;
+            font-size: 35px;
+            padding: 30px;
+            padding-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+    <p class="heading"> <h1> <b> Business ka B</b> </h1></p>
+    <hr>
+    <nav>
+        <a class="Home" href="./home.html" target="_blank">Home</a> 
+        <a class="About us" href="./home.html"target="_blank">About us</a> 
+        <a class="contact" href="./home.html" target="_blank">Contact</a> 
+        <a class="T&C" href="./home.html" target="_blank">T & C</a> 
+
+    </nav>
+    <marquee id="q"  onmouseout="this.start();" onmouseover="this.stop();"  >Order at 9874039507</marquee>
+    <h2> Points to be noted:- </h2>
+    <ul>
+        <li>First watch and then buy.</li>
+        <li>Our goods are pure and high quality.</li>
+        <li>Once goods sold can not be taken back.</li>
+    </ul>
+    <div><span class="button">T-shirt</span></div>
+    <br><br><hr>
+
+    <div class="carousel container-fluid" data-flickity='{ "wrapAround": true }'>
+        <div class="carousel-cell"><img src="./T-shirt1.jpeg" alt="Image"></div>
+        <div class="carousel-cell"><img src="./T-shirt2.jpeg" alt="Image"></div>
+        <div class="carousel-cell"><img src="./T-shirt3.jpeg" alt="Image"></div>
+        <div class="carousel-cell"><img src="./T-shirt4.jpeg" alt="Image"></div>
+        <div class="carousel-cell"><img src="./T-shirt5.jpeg" alt="Image"></div>
+        <div class="carousel-cell"><img src="./T-shirt6.jpeg" alt="Image"></div>
+        <div class="carousel-cell"><img src="./T-shirt7.jpeg" alt="Image"></div>
+    </div>
+</body>
+<footer>
+    <a href="#">FaQ</a>
+    <a href="#">Return policy</a>
+    <a href="#">Privacy policy</a>
+    <a href="#">Terms of service</a>
+    <a href="#">&copy; Business ka B</a>
+</footer>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</html>

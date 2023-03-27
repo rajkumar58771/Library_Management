@@ -1,0 +1,24 @@
+<div style="padding-left:100px;">
+    <h2>Add student</h2>
+    <form [formGroup]="studentForm">
+        <label >Student ID</label>
+        <input type="number">
+        <label >Name</label>
+        <input type="text" formControlName="name">
+        <label >Department</label>
+        <input type="text" formControlName="department">
+        <label >Roll Number</label>
+        <input type="number" formControlName="rollno">
+        <label >Date of Birth</label><br>
+        <input type="date"><br>
+        <label >Mobile Number</label>
+        <input type="number">
+        <div *ngIf="studentForm.valid">
+            <input type="submit" value="Save" style="background: #56ab2f;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #a8e063, #56ab2f);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #a8e063, #56ab2f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            ">
+        </div>
+        <h1>{{studentForm.valid}}</h1>
+    </form>
+</div>

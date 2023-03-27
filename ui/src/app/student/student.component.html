@@ -1,0 +1,31 @@
+<h1>{{Title}}</h1>
+<div style = "margin: 20; float:right">
+    <button class = "button" (click)="addStudent()"> Add Studnet</button>
+</div>
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Student ID</th>
+            <th>Departement</th>
+            <th>Roll no.</th>
+            <th>Mobile</th>
+            <th>Email</th>
+            <th>Address</th>
+            <th>Pincode</th>
+        </tr>
+    </thead>
+    <tbody *ngIf="studentdetail.length>0">
+        <tr *ngFor="let student of studentdetail">
+            <td>{{student.name}}</td>
+            <td>{{student.studentID}}</td>
+            <td>{{student.department}}</td>
+            <td>{{student.rollno}}</td>
+            <td>{{student.mobile}}</td>
+            <td>{{student.email}}</td>
+            <td>{{student.address}}</td>
+            <td>{{student.pincode}}</td>
+        </tr>
+    </tbody>
+</table>
