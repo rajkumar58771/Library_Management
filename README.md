@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # openlibrary
 Library Management Application
 
@@ -19,3 +20,6 @@ $ cd backend
 $ gradlew bootrun
 $ open localhost:8080 in web browser
 ```
+=======
+# Library_Management
+>>>>>>> 7b55cba0c58601aee261ec22e93f91a4c29c25e5
