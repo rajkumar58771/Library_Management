@@ -8,6 +8,6 @@ import com.xfactor.openlibrary.domain.Book;
 
 public interface BookRepository extends JpaRepository<Book, Long> {
     List<Book> findByIsbn(String isbn);
-    List<Book> findByNameAndIsbn(String name, String isbn);
+    List<Book> findByTitleAndIsbn(String title, String isbn);
 
 }

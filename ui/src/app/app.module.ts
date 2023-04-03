@@ -14,6 +14,7 @@ import { AddAdminComponent } from './add-admin/add-admin.component';
 import { AddBooksComponent } from './add-books/add-books.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AddStudentComponent } from './add-student/add-student.component';
+import { HttpClientModule} from '@angular/common/http'
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { AddStudentComponent } from './add-student/add-student.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule, ReactiveFormsModule
+    FormsModule, ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

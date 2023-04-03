@@ -25,7 +25,7 @@ public class BookController{
         this.bookRepository = bookRepository;
     }
 
-    @PostMapping("/savebook")
+    @PostMapping("/saveBook")
     public Book saveBook(@RequestBody Book book){
         if (book.getId() == null) {
             Book book2 = bookRepository.save(book);
